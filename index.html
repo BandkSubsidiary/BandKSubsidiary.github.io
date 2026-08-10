@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>B&K Subsidiary | Healthy Lifestyle</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8f7f2;
+color:#222;
+line-height:1.6;
+}
+
+/*============================
+HEADER
+============================*/
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#0f4d3c;
+z-index:1000;
+box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+nav{
+max-width:1300px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:60px;
+height:60px;
+border-radius:50%;
+background:white;
+padding:4px;
+}
+
+.logo h2{
+color:white;
+font-size:23px;
+}
+
+.logo p{
+color:#d7e8d0;
+font-size:13px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:35px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#b8d690;
+}
+
+.cart-icon{
+background:white;
+color:#0f4d3c;
+padding:10px 18px;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.cart-icon:hover{
+background:#dbe9d5;
+}
+
+/*============================
+HERO
+============================*/
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:120px 20px 60px;
+background:
+linear-gradient(rgba(15,77,60,.82),rgba(15,77,60,.82)),
+url("https://images.unsplash.com/photo-1518843875459-f738682238a6?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero-content{
+max-width:850px;
+animation:fadeUp 1s ease;
+}
+
+.hero-logo{
+width:180px;
+margin-bottom:25px;
+background:white;
+border-radius:50%;
+padding:15px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:35px;
+color:#f0f0f0;
+}
+
+.shopBtn{
+display:inline-block;
+padding:16px 45px;
+background:#8ca84e;
+color:white;
+font-size:18px;
+text-decoration:none;
+border-radius:40px;
+transition:.3s;
+}
+
+.shopBtn:hover{
+background:#6d8539;
+transform:translateY(-3px);
+}
+
+/*============================
+SECTION
+============================*/
+
+section{
+padding:90px 8%;
+}
+
+section h2{
+text-align:center;
+font-size:38px;
+color:#0f4d3c;
+margin-bottom:25px;
+}
+
+/*============================
+ABOUT
+============================*/
+
+#about p{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:18px;
+margin-bottom:50px;
+}
+
+.about-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#0f4d3c;
+margin-bottom:15px;
+font-size:24px;
+}
+
+.card p{
+font-size:15px;
+}
+
+/*============================
+PRODUCT SECTION
+============================*/
+
+#search{
+display:block;
+width:100%;
+max-width:600px;
+margin:20px auto;
+padding:15px;
+border:none;
+border-radius:30px;
+font-size:16px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+outline:none;
+}
+
+.filter-buttons{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+margin:35px 0;
+}
+
+.filter-buttons button{
+padding:12px 25px;
+border:none;
+background:#0f4d3c;
+color:white;
+border-radius:30px;
+cursor:pointer;
+transition:.3s;
+font-size:15px;
+}
+
+.filter-buttons button:hover{
+background:#8ca84e;
+}
+
+#productContainer{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.product{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.product:hover{
+transform:translateY(-8px);
+}
+
+.product img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.product-info{
+padding:20px;
+}
+
+.product h3{
+color:#0f4d3c;
+margin-bottom:10px;
+}
+
+.price{
+font-size:24px;
+font-weight:bold;
+color:#8ca84e;
+margin:15px 0;
+}
+
+.size{
+color:#777;
+margin-bottom:15px;
+}
+
+.product button{
+width:100%;
+padding:14px;
+background:#0f4d3c;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+transition:.3s;
+}
+
+.product button:hover{
+background:#8ca84e;
+}
+
+/*============================
+ANIMATIONS
+============================*/
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/*============================
+SCROLLBAR
+============================*/
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#efefef;
+}
+
+::-webkit-scrollbar-thumb{
+background:#0f4d3c;
+border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:#8ca84e;
+}
+/*============================
+SHOPPING CART
+============================*/
+
+#cart{
+background:#eef5ee;
+}
+
+#cartItems{
+max-width:900px;
+margin:30px auto;
+background:#fff;
+padding:25px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.cart-item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+border-bottom:1px solid #ddd;
+gap:15px;
+}
+
+.cart-item:last-child{
+border-bottom:none;
+}
+
+.cart-item h4{
+color:#0f4d3c;
+font-size:18px;
+}
+
+.cart-item p{
+color:#555;
+font-size:15px;
+}
+
+.qty-box{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.qty-btn{
+width:35px;
+height:35px;
+border:none;
+border-radius:50%;
+background:#0f4d3c;
+color:#fff;
+cursor:pointer;
+font-size:18px;
+transition:.3s;
+}
+
+.qty-btn:hover{
+background:#8ca84e;
+}
+
+.remove-btn{
+padding:8px 15px;
+border:none;
+background:#c0392b;
+color:#fff;
+border-radius:8px;
+cursor:pointer;
+transition:.3s;
+}
+
+.remove-btn:hover{
+background:#96281b;
+}
+
+.cartTotal{
+text-align:right;
+margin-top:25px;
+font-size:28px;
+color:#0f4d3c;
+font-weight:bold;
+}
+
+/*============================
+CHECKOUT
+============================*/
+
+#checkout{
+background:#ffffff;
+}
+
+#orderForm{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+#orderForm input,
+#orderForm textarea{
+padding:16px;
+border:2px solid #d7d7d7;
+border-radius:12px;
+font-size:16px;
+outline:none;
+transition:.3s;
+}
+
+#orderForm input:focus,
+#orderForm textarea:focus{
+border-color:#0f4d3c;
+}
+
+#orderForm textarea{
+resize:none;
+height:130px;
+}
+
+#orderForm button{
+padding:18px;
+background:#0f4d3c;
+color:#fff;
+font-size:18px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+}
+
+#orderForm button:hover{
+background:#8ca84e;
+transform:translateY(-2px);
+}
+
+/*============================
+CONTACT
+============================*/
+
+#contact{
+background:#eef5ee;
+text-align:center;
+}
+
+#contact p{
+margin:12px 0;
+font-size:18px;
+}
+
+/*============================
+FOOTER
+============================*/
+
+footer{
+background:#0f4d3c;
+padding:35px;
+text-align:center;
+color:#fff;
+margin-top:60px;
+}
+
+/*============================
+TOAST MESSAGE
+============================*/
+
+.toast{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#0f4d3c;
+color:#fff;
+padding:15px 25px;
+border-radius:10px;
+font-size:16px;
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+opacity:0;
+pointer-events:none;
+transition:.4s;
+z-index:5000;
+}
+
+.toast.show{
+opacity:1;
+pointer-events:auto;
+}
+
+/*============================
+WHATSAPP BUTTON
+============================*/
+
+.whatsapp{
+position:fixed;
+bottom:30px;
+left:30px;
+width:65px;
+height:65px;
+border-radius:50%;
+background:#25D366;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:34px;
+text-decoration:none;
+color:#fff;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+transition:.3s;
+z-index:999;
+}
+
+.whatsapp:hover{
+transform:scale(1.12);
+}
+
+/*============================
+RESPONSIVE
+============================*/
+
+@media(max-width:992px){
+
+nav{
+padding:15px 20px;
+flex-wrap:wrap;
+}
+
+nav ul{
+width:100%;
+justify-content:center;
+margin-top:20px;
+gap:18px;
+flex-wrap:wrap;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+section{
+padding:80px 5%;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-logo{
+width:140px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section h2{
+font-size:30px;
+}
+
+.product img{
+height:200px;
+}
+
+.cart-item{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.cartTotal{
+text-align:left;
+font-size:24px;
+}
+
+.logo h2{
+font-size:20px;
+}
+
+.logo p{
+font-size:12px;
+}
+
+}
+
+@media(max-width:480px){
+
+nav{
+padding:12px;
+}
+
+.hero{
+padding-top:150px;
+}
+
+.shopBtn{
+padding:14px 30px;
+font-size:16px;
+}
+
+.filter-buttons button{
+width:100%;
+}
+
+#search{
+font-size:15px;
+}
+
+.whatsapp{
+width:58px;
+height:58px;
+font-size:30px;
+}
+
+.cart-icon{
+padding:8px 15px;
+}
+
+}
+
+.nav-right{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+@media(max-width:768px){
+
+/* =========================
+MOBILE NAVIGATION
+========================= */
+
+.nav-right{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+#hamburger{
+display:none;
+flex-direction:column;
+justify-content:center;
+cursor:pointer;
+width:35px;
+height:35px;
+}
+
+#hamburger span{
+height:3px;
+width:28px;
+background:white;
+margin:3px 0;
+border-radius:3px;
+transition:.3s;
+}
+
+/* Desktop */
+
+@media (min-width:769px){
+
+#hamburger{
+display:none;
+}
+
+#navMenu{
+display:flex !important;
+position:static;
+background:none;
+flex-direction:row;
+width:auto;
+padding:0;
+margin:0;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+nav{
+padding:15px 20px;
+}
+
+#hamburger{
+display:flex;
+}
+
+#navMenu{
+display:none;
+position:absolute;
+top:90px;
+left:0;
+width:100%;
+background:#0f4d3c;
+flex-direction:column;
+padding:20px 0;
+text-align:center;
+}
+
+#navMenu.active{
+display:flex;
+}
+
+#navMenu li{
+margin:15px 0;
+}
+
+.logo p{
+display:none;
+}
+
+.logo h2{
+font-size:18px;
+}
+
+.logo img{
+width:50px;
+height:50px;
+}
+
+.cart-icon{
+padding:8px 14px;
+font-size:14px;
+}
+
+}
+}
+</style>
+
+<link rel="icon" type="image/png" href="B&K LOGO.png">
+</head>
+
+<body>
+
+<!-- ===========================
+HEADER
+=========================== -->
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+<img src="B&K LOGO.png" alt="B&K Logo">
+
+<div>
+
+<h2>B&K Subsidiary</h2>
+
+<p>Healthy Lifestyle</p>
+
+</div>
+
+</div>
+
+<div class="nav-right">
+
+<div class="cart-icon">
+
+🛒 <span id="cartCount">0</span>
+
+</div>
+
+<div id="hamburger">
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+</div>
+
+<ul id="navMenu">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#products">Products</a></li>
+
+<li><a href="#cart">Cart</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ===========================
+HOME
+=========================== -->
+
+<section id="home" class="hero">
+
+<div class="hero-content">
+
+<img src="B&K LOGO.png" class="hero-logo">
+
+<h1>
+Nature's Best,
+Delivered Fresh
+</h1>
+
+<p>
+
+Premium Natural Seeds,
+
+Healthy Herbs,
+
+Organic Powders,
+
+Pure Honey,
+
+Rice Poundo,
+
+Natural Wellness Products.
+
+</p>
+
+<a href="#products" class="shopBtn">
+
+Shop Now
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ===========================
+ABOUT
+=========================== -->
+
+<section id="about">
+
+<h2>
+
+Who We Are
+
+</h2>
+
+<p>
+
+B&K Subsidiary is a proudly Nigerian natural wellness brand committed to providing premium-quality seeds, herbs, spices, powders, honey, and healthy food products.
+
+Every product is carefully selected to promote healthy living, better nutrition, and a natural lifestyle.
+
+Our mission is to make healthy choices simple, affordable, and accessible to every home.
+
+</p>
+
+<div class="about-cards">
+
+<div class="card">
+
+<h3>100% Natural</h3>
+
+<p>
+
+No harmful additives.
+
+Only quality natural products.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Premium Quality</h3>
+
+<p>
+
+Freshly packaged for maximum quality.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Trusted Brand</h3>
+
+<p>
+
+Delivering healthy products across Nigeria.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+PRODUCTS
+=========================== -->
+
+<section id="products">
+
+<h2>
+
+Our Products
+
+</h2>
+
+<input
+type="text"
+id="search"
+placeholder="Search products...">
+
+<div class="filter-buttons">
+
+<button data-category="all">All</button>
+
+<button data-category="Seeds">Seeds</button>
+
+<button data-category="Herbs">Herbs & Powders</button>
+
+<button data-category="Spices">Cooking Spices</button>
+
+<button data-category="Natural">Natural Products</button>
+
+<button data-category="Rice">Rice Poundo</button>
+
+</div>
+
+<div id="productContainer">
+
+<!-- Products generated by JavaScript -->
+
+</div>
+
+</section>
+
+<!-- ===========================
+SHOPPING CART
+=========================== -->
+
+<section id="cart">
+
+<h2>
+
+Shopping Cart
+
+</h2>
+
+<div id="cartItems">
+
+<p>
+
+Your cart is empty.
+
+</p>
+
+</div>
+
+<div class="cartTotal">
+
+<h3>
+
+Total:
+
+₦<span id="totalPrice">0</span>
+
+</h3>
+
+</div>
+
+</section>
+
+<!-- ===========================
+CHECKOUT
+=========================== -->
+
+<section id="checkout">
+
+<h2>
+
+Checkout
+
+</h2>
+
+<form id="orderForm">
+
+<input
+type="text"
+id="customerName"
+placeholder="Full Name"
+required>
+
+<input
+type="tel"
+id="customerPhone"
+placeholder="Phone Number"
+required>
+
+<textarea
+id="customerAddress"
+placeholder="Delivery Address"
+required></textarea>
+
+<textarea
+id="customerNote"
+placeholder="Additional Notes (Optional)">
+</textarea>
+
+<button type="submit">
+
+Place Order
+
+</button>
+
+</form>
+
+</section>
+
+<!-- ===========================
+CONTACT
+=========================== -->
+
+<section id="contact">
+
+<h2>
+
+Contact Us
+
+</h2>
+
+<p>
+
+📞 +234 8038346847
+
+</p>
+
+<p>
+
+WhatsApp Orders Available
+
+</p>
+
+<p>
+
+Thank you
+
+</p>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 B&K Subsidiary.
+
+Healthy Lifestyle.
+
+All Rights Reserved.
+
+</p>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+
+//=====================================
+// B&K SUBSIDIARY PRODUCTS
+//=====================================
+
+const products = [
+
+{
+id:1,
+name:"Pumpkin Seeds",
+category:"Seeds",
+size:"100g",
+price:4000,
+image:"pumpkin.jpg"
+},
+
+{
+id:2,
+name:"Sunflower Seeds",
+category:"Seeds",
+size:"100g",
+price:3500,
+image:"sunflower.jpg"
+},
+
+{
+id:3,
+name:"Sesame Seeds",
+category:"Seeds",
+size:"100g",
+price:4000,
+image:"Sesame.jpg"
+},
+
+{
+id:4,
+name:"Flax Seed",
+category:"Seeds",
+size:"100g",
+price:3000,
+image:"Flax.jpg"
+},
+
+{
+id:5,
+name:"Chia Seed",
+category:"Seeds",
+size:"100g",
+price:3500,
+image:"chia.jpg"
+},
+
+{
+id:6,
+name:"Black Seed",
+category:"Seeds",
+size:"100g",
+price:3000,
+image:"blackseed.jpg"
+},
+
+{
+id:7,
+name:"Fenugreek",
+category:"Seeds",
+size:"100g",
+price:2500,
+image:"fenugreek.jpg"
+},
+
+{
+id:8,
+name:"Beetroot Powder",
+category:"Herbs",
+size:"100g",
+price:3500,
+image:"beetroot.jpg"
+},
+
+{
+id:9,
+name:"Baobab Powder",
+category:"Herbs",
+size:"100g",
+price:4500,
+image:"baobab.jpeg"
+},
+
+{
+id:10,
+name:"Cumin",
+category:"Herbs",
+size:"100g",
+price:4000,
+image:"cumin.jpeg"
+},
+
+{
+id:11,
+name:"Coriander",
+category:"Herbs",
+size:"100g",
+price:3000,
+image:"Coriander.jpeg"
+},
+
+{
+id:12,
+name:"Cinnamon",
+category:"Herbs",
+size:"100g",
+price:4000,
+image:"cinnamon.jpeg"
+},
+
+{
+id:13,
+name:"Ginger & Garlic Powder",
+category:"Herbs",
+size:"100g",
+price:4500,
+image:"Ginger.jpeg"
+},
+
+{
+id:14,
+name:"Paprika",
+category:"Herbs",
+size:"100g",
+price:3500,
+image:"Paprika.jpeg"
+},
+
+{
+id:15,
+name:"Cayenne Pepper",
+category:"Herbs",
+size:"100g",
+price:3000,
+image:"cayene.jpeg"
+},
+
+{
+id:16,
+name:"Curry Powder",
+category:"Spices",
+size:"100g",
+price:3000,
+image:"Curry.jpeg"
+},
+
+{
+id:17,
+name:"All-Purpose Seasoning",
+category:"Spices",
+size:"100g",
+price:3000,
+image:"allpurpose.jpeg"
+},
+
+{
+id:18,
+name:"Jollof Spice",
+category:"Spices",
+size:"100g",
+price:3000,
+image:"Jolof.jpeg"
+},
+
+{
+id:19,
+name:"Pepper Soup Spice",
+category:"Spices",
+size:"100g",
+price:3000,
+image:"Pepper soup.jpeg"
+},
+
+{
+id:20,
+name:"Fried Rice Spice",
+category:"Spices",
+size:"100g",
+price:3000,
+image:"Fried.jpeg"
+},
+
+{
+id:21,
+name:"Shea Butter",
+category:"Natural",
+size:"125g",
+price:1500,
+image:"Butter.jpeg"
+},
+
+{
+id:22,
+name:"Shea Butter",
+category:"Natural",
+size:"250g",
+price:3000,
+image:"Butter.jpeg"
+},
+
+{
+id:23,
+name:"Honey",
+category:"Natural",
+size:"250ml",
+price:3000,
+image:"Honey.png"
+},
+
+{
+id:24,
+name:"Honey",
+category:"Natural",
+size:"500ml",
+price:6000,
+image:"Honey.png"
+},
+
+{
+id:25,
+name:"Honey",
+category:"Natural",
+size:"1L",
+price:11000,
+image:"Honey.png"
+},
+
+{
+id:26,
+name:"Rice Poundo",
+category:"Rice",
+size:"1kg",
+price:3000,
+image:"Ricepoundo.jpeg"
+}
+
+
+
+];
+
+//=====================================
+// CART
+//=====================================
+
+let cart=[];
+
+const productContainer=document.getElementById("productContainer");
+
+//=====================================
+// DISPLAY PRODUCTS
+//=====================================
+
+function displayProducts(productList){
+
+productContainer.innerHTML="";
+
+productList.forEach(product=>{
+
+productContainer.innerHTML+=`
+
+<div class="product">
+
+<img src="${product.image}" alt="${product.name}">
+
+<div class="product-info">
+
+<h3>${product.name}</h3>
+
+<p class="size">${product.size}</p>
+
+<p class="price">₦${product.price.toLocaleString()}</p>
+
+<button onclick="addToCart(${product.id})">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+});
+
+}
+
+//=====================================
+// SHOW PRODUCTS
+//=====================================
+
+displayProducts(products);
+
+//=====================================
+// ADD TO CART
+//=====================================
+
+function addToCart(id){
+
+const product=products.find(item=>item.id===id);
+
+const existing=cart.find(item=>item.id===id);
+
+if(existing){
+
+existing.quantity++;
+
+}else{
+
+cart.push({
+
+...product,
+
+quantity:1
+
+});
+
+}
+
+updateCart();
+
+showToast(product.name+" added to cart.");
+
+}
+
+//=====================================
+// UPDATE CART
+//=====================================
+
+function updateCart(){
+
+const cartItems=document.getElementById("cartItems");
+
+const totalPrice=document.getElementById("totalPrice");
+
+const cartCount=document.getElementById("cartCount");
+
+cartItems.innerHTML="";
+
+if(cart.length===0){
+
+cartItems.innerHTML="<p>Your cart is empty.</p>";
+
+totalPrice.textContent="0";
+
+cartCount.textContent="0";
+
+return;
+
+}
+
+let total=0;
+
+let items=0;
+
+cart.forEach(item=>{
+
+total+=item.price*item.quantity;
+
+items+=item.quantity;
+
+cartItems.innerHTML+=`
+
+<div class="cart-item">
+
+<div>
+
+<h4>${item.name}</h4>
+
+<p>${item.size}</p>
+
+<p>₦${item.price.toLocaleString()}</p>
+
+</div>
+
+<div class="qty-box">
+
+<button class="qty-btn" onclick="decreaseQty(${item.id})">-</button>
+
+<strong>${item.quantity}</strong>
+
+<button class="qty-btn" onclick="increaseQty(${item.id})">+</button>
+
+</div>
+
+<div>
+
+<h4>
+
+₦${(item.price*item.quantity).toLocaleString()}
+
+</h4>
+
+<button class="remove-btn"
+
+onclick="removeItem(${item.id})">
+
+Remove
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+});
+
+totalPrice.textContent=total.toLocaleString();
+
+cartCount.textContent=items;
+
+}
+
+//=====================================
+// INCREASE QUANTITY
+//=====================================
+
+function increaseQty(id){
+
+const item=cart.find(product=>product.id===id);
+
+if(item){
+
+item.quantity++;
+
+updateCart();
+
+}
+
+}
+
+//=====================================
+// DECREASE QUANTITY
+//=====================================
+
+function decreaseQty(id){
+
+const item=cart.find(product=>product.id===id);
+
+if(!item) return;
+
+item.quantity--;
+
+if(item.quantity<=0){
+
+cart=cart.filter(product=>product.id!==id);
+
+}
+
+updateCart();
+
+}
+
+//=====================================
+// REMOVE ITEM
+//=====================================
+
+function removeItem(id){
+
+cart=cart.filter(product=>product.id!==id);
+
+updateCart();
+
+showToast("Item removed.");
+
+}
+
+//=====================================
+// SEARCH PRODUCTS
+//=====================================
+
+const search=document.getElementById("search");
+
+search.addEventListener("keyup",()=>{
+
+const keyword=search.value.toLowerCase();
+
+const filtered=products.filter(product=>
+
+product.name.toLowerCase().includes(keyword)
+
+);
+
+displayProducts(filtered);
+
+});
+
+//=====================================
+// CATEGORY FILTER
+//=====================================
+
+const buttons=document.querySelectorAll(".filter-buttons button");
+
+buttons.forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+const category=button.dataset.category;
+
+if(category==="all"){
+
+displayProducts(products);
+
+return;
+
+}
+
+const filtered=products.filter(product=>
+
+product.category===category
+
+);
+
+displayProducts(filtered);
+
+});
+
+});
+
+//=====================================
+// TOAST MESSAGE
+//=====================================
+
+function showToast(message){
+
+let toast=document.querySelector(".toast");
+
+if(!toast){
+
+toast=document.createElement("div");
+
+toast.className="toast";
+
+document.body.appendChild(toast);
+
+}
+
+toast.textContent=message;
+
+toast.classList.add("show");
+
+setTimeout(()=>{
+
+toast.classList.remove("show");
+
+},2500);
+
+}
+
+//=====================================
+// INITIALIZE CART
+//=====================================
+
+updateCart();
+
+
+
+//======================================
+// EMAILJS
+//======================================
+
+// Replace these with YOUR EmailJS details
+emailjs.init("Pk9fB4wZN0OXtYhGL");
+
+//======================================
+// PLACE ORDER
+//======================================
+
+const orderForm=document.getElementById("orderForm");
+
+orderForm.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+if(cart.length===0){
+
+showToast("Your cart is empty.");
+
+return;
+
+}
+
+const customerName=document.getElementById("customerName").value.trim();
+
+const customerPhone=document.getElementById("customerPhone").value.trim();
+
+const customerAddress=document.getElementById("customerAddress").value.trim();
+
+const customerNote=document.getElementById("customerNote").value.trim();
+
+let orderList="";
+
+let total=0;
+
+cart.forEach(item=>{
+
+orderList+=`${item.name} (${item.size})
+Quantity: ${item.quantity}
+Subtotal: ₦${(item.price*item.quantity).toLocaleString()}
+
+`;
+
+total+=item.price*item.quantity;
+
+});
+
+const templateParams={
+
+customer_name:customerName,
+
+customer_phone:customerPhone,
+
+customer_address:customerAddress,
+
+customer_note:customerNote || "None",
+
+products:orderList,
+
+total:"₦"+total.toLocaleString()
+
+};
+
+emailjs.send(
+
+"service_pvv5tnn",
+
+"template_02cjdwb",
+
+templateParams
+
+)
+
+.then(()=>{
+
+showToast("Order sent successfully You will soon recieve a message");
+
+cart=[];
+
+updateCart();
+
+orderForm.reset();
+
+})
+
+.catch(error=>{
+
+console.error(error);
+
+showToast("Failed to send order.");
+
+});
+
+});
+
+//======================================
+// SMOOTH ACTIVE NAVIGATION
+//======================================
+
+const sections=document.querySelectorAll("section");
+
+const navLinks=document.querySelectorAll("nav ul li a");
+
+window.addEventListener("scroll",()=>{
+
+let current="";
+
+sections.forEach(section=>{
+
+const sectionTop=section.offsetTop-120;
+
+if(pageYOffset>=sectionTop){
+
+current=section.getAttribute("id");
+
+}
+
+});
+
+navLinks.forEach(link=>{
+
+link.classList.remove("active");
+
+if(link.getAttribute("href")==="#"+current){
+
+link.classList.add("active");
+
+}
+
+});
+
+});
+
+//======================================
+// FADE IN ON SCROLL
+//======================================
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+
+entry.target.style.transform="translateY(0)";
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".card,.product,#cart,#checkout,#contact").forEach(el=>{
+
+el.style.opacity="0";
+
+el.style.transform="translateY(40px)";
+
+el.style.transition=".8s";
+
+observer.observe(el);
+
+});
+
+//======================================
+// FLOATING WHATSAPP BUTTON
+//======================================
+
+const whatsapp=document.createElement("a");
+
+whatsapp.href="https://wa.me/2348038346847";
+
+whatsapp.target="_blank";
+
+whatsapp.className="whatsapp";
+
+whatsapp.innerHTML="💬";
+
+document.body.appendChild(whatsapp);
+
+//======================================
+// BACK TO TOP BUTTON
+//======================================
+
+const topBtn=document.createElement("button");
+
+topBtn.innerHTML="↑";
+
+topBtn.style.position="fixed";
+
+topBtn.style.right="30px";
+
+topBtn.style.bottom="110px";
+
+topBtn.style.width="50px";
+
+topBtn.style.height="50px";
+
+topBtn.style.borderRadius="50%";
+
+topBtn.style.border="none";
+
+topBtn.style.background="#0f4d3c";
+
+topBtn.style.color="white";
+
+topBtn.style.fontSize="22px";
+
+topBtn.style.cursor="pointer";
+
+topBtn.style.display="none";
+
+topBtn.style.zIndex="999";
+
+document.body.appendChild(topBtn);
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>500){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+topBtn.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+//======================================
+// COPYRIGHT YEAR
+//======================================
+
+const footer=document.querySelector("footer p");
+
+footer.innerHTML=`© ${new Date().getFullYear()} B&K Subsidiary. Healthy Lifestyle. All Rights Reserved.`;
+
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll("#navMenu a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+    });
+});
+</script>
+
+</body>
+</html>
