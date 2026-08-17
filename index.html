@@ -797,6 +797,27 @@ font-size:14px;
 
 }
 }
+.cart-icon{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+background:white;
+color:#0f4d3c;
+padding:10px 18px;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.cart-icon:hover{
+background:#dbe9d5;
+transform:scale(1.05);
+}
+#products{
+scroll-margin-top:100px;
+}
 </style>
 
 <link rel="icon" type="image/png" href="B&K LOGO.png">
@@ -828,11 +849,11 @@ HEADER
 
 <div class="nav-right">
 
-<div class="cart-icon">
+<a href="#cart" class="cart-icon">
 
 🛒 <span id="cartCount">0</span>
 
-</div>
+</a>
 
 <div id="hamburger">
 
@@ -1646,6 +1667,18 @@ button.addEventListener("click",()=>{
 
 const category=button.dataset.category;
 
+/* On mobile, scroll to the Products section */
+if(window.innerWidth <= 768){
+
+document.getElementById("products").scrollIntoView({
+behavior:"smooth",
+block:"start"
+});
+
+}
+
+/* Show selected products */
+
 if(category==="all"){
 
 displayProducts(products);
@@ -1970,6 +2003,7 @@ document.querySelectorAll("#navMenu a").forEach(link => {
         navMenu.classList.remove("active");
     });
 });
+
 </script>
 
 </body>
