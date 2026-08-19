@@ -576,112 +576,360 @@ transform:scale(1.12);
 }
 
 /*============================
-RESPONSIVE
+RESPONSIVE DESIGN
 ============================*/
 
-@media(max-width:992px){
+@media (max-width: 992px){
 
-nav{
-padding:15px 20px;
-flex-wrap:wrap;
-}
+    nav{
+        padding:15px 20px;
+    }
 
-nav ul{
-width:100%;
-justify-content:center;
-margin-top:20px;
-gap:18px;
-flex-wrap:wrap;
-}
+    nav ul{
+        gap:18px;
+    }
 
-.hero h1{
-font-size:42px;
-}
+    .hero h1{
+        font-size:42px;
+    }
 
-.hero p{
-font-size:18px;
-}
+    .hero p{
+        font-size:18px;
+    }
 
-section{
-padding:80px 5%;
-}
+    section{
+        padding:80px 5%;
+    }
 
 }
 
-@media(max-width:768px){
 
-.hero-logo{
-width:140px;
+/*============================
+MOBILE HEADER
+============================*/
+
+@media (max-width:768px){
+
+    header{
+        height:70px;
+    }
+
+    nav{
+        width:100%;
+        height:70px;
+        padding:8px 12px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        flex-wrap:nowrap;
+        gap:8px;
+    }
+
+    /* LOGO */
+
+    .logo{
+        display:flex;
+        align-items:center;
+        gap:7px;
+        flex:1;
+        min-width:0;
+    }
+
+    .logo img{
+        width:46px;
+        height:46px;
+        flex-shrink:0;
+    }
+
+    .logo h2{
+        font-size:16px;
+        white-space:nowrap;
+    }
+
+    .logo p{
+        display:none;
+    }
+
+
+    /* RIGHT SIDE */
+
+    .nav-right{
+        display:flex;
+        align-items:center;
+        justify-content:flex-end;
+        gap:7px;
+        flex-shrink:0;
+    }
+
+
+    /* CART */
+
+    .cart-icon{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:55px;
+        height:38px;
+        padding:0;
+        border-radius:22px;
+        font-size:14px;
+        flex-shrink:0;
+    }
+
+
+    /* HAMBURGER */
+
+    #hamburger{
+        width:38px;
+        height:38px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+        cursor:pointer;
+        flex-shrink:0;
+    }
+
+    #hamburger span{
+        width:24px;
+        height:3px;
+        margin:2.5px 0;
+        background:white;
+        border-radius:5px;
+    }
+
+
+    /* MOBILE MENU */
+
+    #navMenu{
+        display:none;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#0f4d3c;
+        flex-direction:column;
+        align-items:center;
+        gap:0;
+        padding:10px 0 15px;
+        margin:0;
+        box-shadow:0 8px 15px rgba(0,0,0,.15);
+    }
+
+    #navMenu.active{
+        display:flex;
+    }
+
+    #navMenu li{
+        width:100%;
+        text-align:center;
+        margin:0;
+    }
+
+    #navMenu li a{
+        display:block;
+        width:100%;
+        padding:12px;
+    }
+
+
+    /* HERO */
+
+    .hero{
+        min-height:100vh;
+        padding:110px 20px 60px;
+    }
+
+    .hero-logo{
+        width:140px;
+    }
+
+    .hero h1{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+
+    /* SECTIONS */
+
+    section{
+        padding:70px 18px;
+    }
+
+    section h2{
+        font-size:30px;
+    }
+
+
+    /* FILTER BUTTONS */
+
+    .filter-buttons{
+        justify-content:flex-start;
+        flex-wrap:nowrap;
+        overflow-x:auto;
+        gap:10px;
+        padding:5px 2px 12px;
+        margin:25px 0;
+        scrollbar-width:none;
+    }
+
+    .filter-buttons::-webkit-scrollbar{
+        display:none;
+    }
+
+    .filter-buttons button{
+        width:auto;
+        min-width:max-content;
+        white-space:nowrap;
+        padding:10px 18px;
+        flex-shrink:0;
+    }
+
+
+    /* PRODUCTS */
+
+    #productContainer{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:15px;
+        margin-top:25px;
+    }
+
+    .product{
+        border-radius:15px;
+    }
+
+    .product img{
+        width:100%;
+        height:170px;
+        object-fit:cover;
+    }
+
+    .product-info{
+        padding:14px;
+    }
+
+    .product h3{
+        font-size:15px;
+        line-height:1.3;
+    }
+
+    .price{
+        font-size:19px;
+        margin:10px 0;
+    }
+
+    .size{
+        font-size:13px;
+    }
+
+    .product button{
+        padding:11px 8px;
+        font-size:14px;
+    }
+
+
+    /* CART */
+
+    .cart-item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+    }
+
+    .cartTotal{
+        text-align:left;
+        font-size:24px;
+    }
+
+
+    /* WHATSAPP */
+
+    .whatsapp{
+        width:58px;
+        height:58px;
+        font-size:30px;
+        bottom:20px;
+        left:18px;
+    }
+
 }
 
-.hero h1{
-font-size:34px;
-}
 
-.hero p{
-font-size:16px;
-}
+/*============================
+SMALL PHONES
+============================*/
 
-section h2{
-font-size:30px;
-}
+@media (max-width:480px){
 
-.product img{
-height:200px;
-}
+    nav{
+        padding:8px 10px;
+    }
 
-.cart-item{
-flex-direction:column;
-align-items:flex-start;
-}
+    .logo img{
+        width:42px;
+        height:42px;
+    }
 
-.cartTotal{
-text-align:left;
-font-size:24px;
-}
+    .logo h2{
+        font-size:15px;
+    }
 
-.logo h2{
-font-size:20px;
-}
+    .cart-icon{
+        width:52px;
+        height:36px;
+        font-size:13px;
+    }
 
-.logo p{
-font-size:12px;
-}
+    #hamburger{
+        width:36px;
+        height:36px;
+    }
 
-}
+    #navMenu{
+        top:70px;
+    }
 
-@media(max-width:480px){
+    .hero{
+        padding-top:105px;
+    }
 
-nav{
-padding:12px;
-}
+    .hero h1{
+        font-size:30px;
+    }
 
-.hero{
-padding-top:150px;
-}
+    .hero p{
+        font-size:15px;
+    }
 
-.shopBtn{
-padding:14px 30px;
-font-size:16px;
-}
+    #productContainer{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:12px;
+    }
 
-.filter-buttons button{
-width:100%;
-}
+    .product img{
+        height:145px;
+    }
 
-#search{
-font-size:15px;
-}
+    .product-info{
+        padding:11px;
+    }
 
-.whatsapp{
-width:58px;
-height:58px;
-font-size:30px;
-}
+    .product h3{
+        font-size:14px;
+    }
 
-.cart-icon{
-padding:8px 15px;
-}
+    .price{
+        font-size:17px;
+    }
+
+    .product button{
+        font-size:13px;
+        padding:10px 5px;
+    }
 
 }
 
@@ -828,7 +1076,7 @@ HEADER
 
 <div class="nav-right">
 
-<div class="cart-icon">
+<div class="cart-icon" id="cartButton">
 
 🛒 <span id="cartCount">0</span>
 
@@ -1969,6 +2217,20 @@ document.querySelectorAll("#navMenu a").forEach(link => {
     link.addEventListener("click", () => {
         navMenu.classList.remove("active");
     });
+});
+
+//======================================
+// CLICKABLE CART BUTTON
+//======================================
+
+const cartButton = document.getElementById("cartButton");
+
+cartButton.addEventListener("click", () => {
+
+    document.getElementById("cart").scrollIntoView({
+        behavior: "smooth"
+    });
+
 });
 </script>
 
